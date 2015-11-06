@@ -1,0 +1,36 @@
+#content #cbg #haberler { width:340px; height: 225px; overflow:hidden; margin:0 0 0 10px; }
+#content #cbg #haberler .frame { background:url(../images/frame.png) no-repeat; width:70px; height:70px; float:left; margin-right:10px; }
+#content #cbg #haberler .frame img{ margin:5px 0 0 5px; width:61px; height:61px;}
+#content #cbg #haberler p { text-align:justify;}
+#content #cbg #haberler p strong{ color:#59C1BC; float:left; width:255px; max-height:30px; overflow:hidden; text-align:left !important;}
+#content #cbg #haberler p b{ color:#6a6a6a; font-size:11px; float:left; width:255px; height:20px; overflow:hidden; border-bottom:#C1C1C1 1px dashed;}
+#content #cbg #haberler p i{ color:#043e64; float:left; width:255px; height:45px; overflow:hidden; font-size:12px; font-style:normal; padding-top:5px; line-height:1.2;}
+#content #cbg #haberler p i a{ color:#C1C1C1;}
+#content #cbg #haberler p i a:hover{ color:#042e4a;}
+#content #cbg #haberler ul li{ padding-bottom:40px; background:url(../images/bottom.png) no-repeat center 105px;}
+
+#content #cbg .navi1{ background:url(../images/navibg.png) no-repeat; width:79px; height:50px; position:absolute; bottom:-30px; left:20px;}
+#content #cbg .navi1 .hn{ float:left; width:10px; height:15px; background:url(../images/navi.png) no-repeat left top; margin:9px 0 0 23px; outline:none;}
+#content #cbg .navi1 .hn:hover{ background:url(../images/navi.png) no-repeat left bottom;}
+#content #cbg .navi1 .hp{ float:left; width:10px; height:15px; background:url(../images/navi.png) no-repeat right top; margin:9px 0 0 16px; outline:none;}
+#content #cbg .navi1 .hp:hover{ background:url(../images/navi.png) no-repeat right bottom;}
+
+#content #cbg #indirim { width:250px; height:240px; margin:35px 0 0 5px;}
+#content #cbg #indirim .frm{  width:243px; height:193px; overflow:hidden; position:relative;}
+#content #cbg #indirim .frm .frame { background:url(../images/p_frame.png) no-repeat; width:243px; height:193px; position:absolute; z-index:1; }
+#content #cbg #indirim .frm img{ position:absolute; z-index:0; }
+#content #cbg #indirim a.baslik{ font-weight:bold; color:#C1C1C1; float:left; width:255px; height:14px; overflow:hidden; margin-left:10px; padding-left:12px; background:url(../images/im.jpg) no-repeat left 3px;}
+#content #cbg #indirim a.fiyat{ font-weight:bold; color:#A5A5A5; font-size:20px; float:left; width:255px; height:30px; overflow:hidden; margin:10px 0 0 10px; padding-left:12px;}
+#content #cbg #indirim .fiyat .kdv{ font-size:12px;}
+
+#content #cbg .navi2{ background:url(../images/navibg.png) no-repeat; width:79px; height:50px; position:absolute; bottom:-30px; right:570px;}
+#content #cbg .navi2 .in{ float:left; width:10px; height:15px; background:url(../images/navi.png) no-repeat left top; margin:9px 0 0 23px; outline:none;}
+#content #cbg .navi2 .in:hover{ background:url(../images/navi.png) no-repeat left bottom;}
+#content #cbg .navi2 .ip{ float:left; width:10px; height:15px; background:url(../images/navi.png) no-repeat right top; margin:9px 0 0 16px; outline:none;}
+#content #cbg .navi2 .ip:hover{ background:url(../images/navi.png) no-repeat right bottom;}
+
+#content #reflist { width:100%; height:105px; overflow:hidden; margin:0px 0 0 10px; }
+#content #reflist a{ float:left; background:url(../images/refbg.png) no-repeat; width:126px; height:95px; text-align:center; margin:10px 7px 10px 7px;}
+#content #reflist a img{ margin:10px 0 0 0px; width:89px; height:67px;}
+#content #referans .rn{ cursor:pointer; position:absolute; right:-39px; top:51px; z-index:999;}
+#content #referans .rp{ cursor:pointer; position:absolute; left:-39px; top:51px; z-index:999;}

@@ -1,0 +1,52 @@
+MErhaba Arkadaslar
+
+Eyapim Webtasarimci Scripti V2 Eyapim.Com Tarafindan Tasarlanmis, CSS,Design ve Kodlama Eyapim.Com a Aittir.
+
+Bu Tasarim ve  Kodlama Webtasarim isi ile Ugrasan Tüm Meslektaslara Ücretsiz Sunulmustur.
+
+
+
+
+SCRIPTiN KURULUMU..............................
+
+
+
+Dosyalarý FTP Atýn..
+
+SQL Klasöründeki webtasarimci.sql Dosyasini Plask Panel den import Ediniz.
+
+ve Sonra...
+
+library > Elkatek_Connect.php  ye Gelip Dosyanin En Üstündeki Kod a Kendi Website Adresinizi Girin. Sonrasinda
+Kodlarin En Altina Gelip Kendi Veritabaninizin Bilgilerini Giriniz..
+
+
+Daha Sonra.....
+
+
+yonet > library > mysql_connect.php  Dosyasininda En Alt Satirina Gelip  Kendi Veritabaniniza Göre Düzenleyin.
+
+
+Admin Giris Bilgileri :
+
+Kullanici Adi : admin
+Sifre         : admin
+
+Artýk Yapamayan Kalmaz Sanýrým..
+
+Güle Güle Kullanin Arkadaslar. Sizden Sadece Allah Razi Olsun Demenizi Rica Ediyorum, Bu Bana Yetecektir.
+
+Yeni Yil Hediyesi Olarak Kabul Edin.
+
+Hayir Dua larinizi Eksik Etmeyin insallah..
+
+
+Yeni Yiliniz Kutlu, Mutlu, ve Huzurlu Gecmesi Dilegi ile..
+
+Eyapim.com
+
+destek@eyapim.com    eyapim@hotmail.com
+
+Skype : eyapim
+
+Tel : GSM: 0049 177 2366489   -    OFiS TEL: 0049 2361 3841104

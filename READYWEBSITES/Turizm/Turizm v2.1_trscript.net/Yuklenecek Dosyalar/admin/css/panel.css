@@ -1,0 +1,99 @@
+body {
+ background-color: #b02b2c;
+ height:100%;
+ font-family:Tahoma, Verdana, Arial, sans-serif;
+ text-align: left;
+ color:#FFF;
+ font-size:12px;
+}
+.solmenu1{
+  background: url(../tema/solmenuust.png) no-repeat;
+  width: 250px;
+  height: 13px;
+}
+
+.solmenu2{
+  background: url(../tema/solmenuara.png);
+  width: 250px;
+  height: 100%;
+}
+.menuyazi {
+  margin: 0 0 5px 15px;
+  color: #b02b2c;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+a.menu:link {
+  color: #FFFFFF;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: left;
+}
+.menu {
+  margin: 0 0 5px 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: left;
+}
+.menubos {
+  margin: 5px 0 0px 10px;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: left;
+}
+.solmenu3 {
+  background: url(../tema/solmenualt.png);
+  width: 250px;
+  height: 13px;
+}
+.sagmenu1 {
+  background: url(../tema/sagust.png) no-repeat;
+  width: 712px;
+  height: 13px;
+}
+.sagmenu2 {
+  background: url(../tema/sagorta.png);
+  width: 712px;
+}
+.sagmenu3 {
+  background: url(../tema/sagalt.png) no-repeat;
+  width: 712px;
+  height: 13px;
+}
+.ortaalan {
+  font-size: 12px;
+  font-family: Tahoma;
+  color: #FFFFFF;
+  margin: 0px 10px 10px 10px;
+  text-align: center;
+}
+.aralik {
+  width: 712px;
+  height: 10px;
+}
+.baslik {
+  font-size: 12px;
+  font-family: Tahoma;
+  color: #FFFFFF;
+  margin: 0 10px 10px 10px;
+  text-align: left;
+  font-weight: bold;
+}
+.alt1 {
+  background: url(../tema/altust.png) no-repeat;
+  width: 1000px;
+  height: 5px;
+}
+.alt2 {
+  background: url(../tema/altara.png);
+  height: 50px;
+  width: 1000px;
+  vertical-align: middle;
+}
+.alt3 {
+  background: url(../tema/altalt.png) no-repeat;
+  width: 1000px;
+  height: 13px;
+}
+

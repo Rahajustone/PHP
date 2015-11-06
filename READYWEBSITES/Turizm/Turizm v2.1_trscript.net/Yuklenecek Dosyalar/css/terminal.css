@@ -1,0 +1,163 @@
+@import "validationEngine.jquery.css";
+
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;background:transparent;margin:0;padding:0}
+body{line-height:1.2}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+:focus{outline:0}
+ins{text-decoration:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+body {
+	font-family:Arial;
+	font-size:12px;
+	margin:0 auto;
+	background:url(../tema/background.jpg); background-repeat:no-repeat; background-attachment:fixed; background-position:center;
+	color:#000;
+}
+#pixel {
+width:1010px; margin-left:auto; margin-right:auto; text-align:left; background-image:url('../tema/bg.jpg'); background-repeat:repeat-y; background-attachment:fixed; background-position:center;	
+}
+#diller { background:url(../tema/diller.png);width:438px; height:35px; padding-left:40px; }
+#diller .menu a{ display:block; background:url(../tema/mini_ok.png) 0 12px no-repeat; padding:8px 15px; color:#0099CC; margin-right:5px; }
+#diller .dil a { display:block; margin-right:5px; margin-top:10px; margin-left:15px; }
+img { border:0px; }
+a { text-decoration:none; }
+.sag { float:right;   }
+.sol { float:left; }
+.fontkalin { font-weight:bold; }
+.temizle { clear:both; }
+#genel { width:1000px; margin:0 auto; background:#fff; height:1000px }
+#ustcizgi { width:1000px; height:3px; background:#e0e0e0; }
+#menubar { background:url(../tema/menubar.png); height:37px; width:1000px; }
+#menubar .menubar { width:880px; }
+#menubar .telefon { width:120px; text-align:center; font-size:15px; padding-top:10px; color:#0099CC}
+#menubar .menu a{ display:block; padding:12px 15px 12px 15px; color:#333; }
+#ustalan { width:1000px; height:95px; }
+#slideralani { width:700px; height:300px; border-bottom:2px solid #00aeef; margin:10px 10px 0 0; }
+#aramaalani { width:278px; margin-top:10px; background:#00aeef; height:292px; padding:5px 6px; }
+#bg_arama { background:url(../tema/bg_arama.png); width:278px; height:292px; }
+#bg_arama .aramabaslik { color:#fff; padding:20px 0 0 15px; font-size:16px; }
+#solalan { width:200px; margin:10px 10px 0 0;  }
+#ortaalan { width:790px; margin-top:10px;  margin-left:auto; margin-right:auto; background-image:url('../tema/bg.jpg'); background-repeat:repeat-y; background-attachment:fixed; background-position:center; }
+.ortakdiv { width:1000px;  background-image:url('../tema/bg.jpg'); background-repeat:repeat-y; background-attachment:fixed; background-position:center; }
+.solbaslik { width:185px; background:url(../tema/bg_solbaslik.png); height:22px; font-size:14px; color:#fff; padding:10px 0 0 15px;}
+.solmenu { width:198px; border-right:1px solid #ddd; border-left:1px solid #ddd; }
+.solmenu1 a{ display:block; width:183px; height:19px; background: url(../tema/menu_ok.png) 3px 8px no-repeat #E7F0F0; color:#333; font-size:12px; padding:6px 0 0 15px; }
+.solmenu1 a:hover{ background: url(../tema/menu_okhover.png) 5px 8px no-repeat #E7F0F0; }
+.solmenu2 a{ display:block; width:183px; height:19px; background: url(../tema/menu_ok.png) 3px 8px no-repeat #F2ffff; color:#333; font-size:12px; padding:6px 0 0 15px; }
+.solmenu2 a:hover{ background: url(../tema/menu_okhover.png) 5px 8px no-repeat #F2ffff; }
+.solmenualt { width:198px; height:5px; background:#f2ffff; border-right:1px solid #ddd; border-left:1px solid #ddd; border-bottom:1px solid #ddd; border-radius:0 0 5px 5px; margin-bottom:10px; }
+.solbaslik2 { width:185px; background:url(../tema/bg_solbaslik2.png); height:22px; font-size:14px; color:#003366; padding:10px 0 0 15px;}
+.solmenuorta { width:198px; height:5px; background:#f5f5f5; border-right:1px solid #FFD52D; border-left:1px solid #FFD52D;}
+.solmenualt2 { width:198px; height:5px; background:#f5f5f5; border-right:1px solid #FFD52D; border-left:1px solid #FFD52D; border-bottom:1px solid #FFD52D; border-radius:0 0 5px 5px; margin-bottom:10px; }
+.mavibaslik { width:250px; height:23px; background:url(../tema/bg_mavi.png); padding:9px 0 0 10px; color:#000; font-size:14px;}
+.yesilbaslik { width:250px; height:23px; background:url(../tema/bg_yesil.png); padding:9px 0 0 10px; color:#000; font-size:14px;}
+.turuncubaslik { width:250px; height:23px; background:url(../tema/bg_turuncu.png); padding:9px 0 0 10px; color:#000; font-size:14px; }
+#turuncu { width:260px; }
+#mavi { width:260px; }
+#yesil { width:260px; }
+.otel{ width:260px; margin:5px 0 5px 0; }
+.otel .turuncuotelresim img{ border:1px solid #FB8B06; padding:1px; width:89px; height:88px; margin-right:7px; }
+.otel .yesilotelresim img{ border:1px solid #55C22B; padding:1px; width:89px; height:88px; margin-right:7px; }
+.otel .maviotelresim img{ border:1px solid #0A95E4; padding:1px; width:89px; height:88px; margin-right:7px; }
+.otel .turuncuyazi { width:160px; height:92px; }
+.otel .yesilyazi { width:160px; height:92px; }
+.otel .maviyazi { width:160px; height:92px; }
+.otel .turuncuyazi .baslik { color:#333; margin:0 0 2px 0; font-weight:bold; height:25px; }
+.otel .yesilyazi .baslik { color:#333; margin:0 0 2px 0; font-weight:bold; height:25px; }
+.otel .maviyazi .baslik { color:#333; margin:0 0 2px 0; font-weight:bold; height:25px; }
+.otel .turuncuyazi .erken { color:#cc0000; margin:2px 0; padding-top:1px; height:33px; width:100px; text-align:center; }
+.otel .yesilyazi .erken { color:#cc0000; margin:2px 0; padding-top:1px; height:33px; width:100px; text-align:center; }
+.otel .maviyazi .erken { color:#cc0000; margin:2px 0; padding-top:1px; height:33px; width:100px; text-align:center; }
+.otel .turuncuyazi .indirim { color:#FF4F1C; margin:2px 0; height:36px; padding-top:2px; width:60px; text-align:center;  font-size:16px; }
+.otel .yesilyazi .indirim { color:#55C22B; margin:2px 0; height:36px; padding-top:2px; width:60px; text-align:center;  font-size:16px; }
+.otel .maviyazi .indirim { color:#0A95E4; margin:2px 0; height:36px; padding-top:2px; width:60px; text-align:center;  font-size:16px; }
+.ucuz { margin:0 0 5px 0; }
+.ucuz .resim img{ width:60px; height:64px; border:1px solid #ccc; padding:1px; background:#fff; margin:0 5px; }
+.ucuz .isim a{ display:block; color:#666666; font-size:11px; font-family:tahoma; margin-bottom:1px; width:120px; height:27px; }
+.ucuz .isim a:hover{ color:#cc0000;}
+.ucuz .bolge { color:#666666; font-size:11px; font-family:tahoma; margin-bottom:1px; width:120px; }
+.ucuz .konaklama { color:#0099ff; font-size:11px; font-family:tahoma; margin-bottom:1px; width:120px; }
+.ucuz .fiyat { color:#666; font-size:11px; font-family:tahoma; width:120px; }
+.otellistesi { width:386px; margin-right:18px; margin-bottom:10px; }
+.otellistesi2 { width:386px; margin-bottom:10px; }
+.otellistesibaslik { background:url(../tema/otel_bg_baslik.png); width:376px; height:24px; color:#000; font-size:12px; padding:8px 0 0 10px; }
+.listeotelbaslik a{ display:block; color:#000; width:241px; }
+.listeotelyildiz { width:130px; text-align:right; margin-right:5px;}
+.otellisteaciklama { width:370px; background:#f5f5f5; height:105px; border-bottom:1px solid #ccc; border-right:1px solid #ccc; border-left:1px solid #ccc; padding:8px 7px; }
+.otellisteaciklama .resim img{ width:99px; height:99px; border:1px solid #ccc; padding:2px; margin-right:5px; }
+.otellisteaciklama .baslik { width:200px; height:17px; color:#333; font-size:12px; font-family:tahoma; }
+.otellisteaciklama .konaklama { width:200px; height:17px; color:#666; font-size:12px; font-family:tahoma; }
+.otellisteaciklama .erken { width:200px; height:17px; margin-top:2px; color:red; font-size:12px; font-family:tahoma; }
+.otellisteaciklama .fiyat { width:200px; height:17px; margin-top:2px; margin-bottom:3px; color:#0099ff; font-size:14px; font-family:tahoma; }
+.otellisteaciklama .detaylibilgi a{ display:block; color:#cc9900; background:url(../tema/detaylibilgi.png); width:107px; height:23px; margin-right:8px; text-align:center; padding-top:7px; text-shadow:1px 1px 2px #fff; }
+.otellisteaciklama .rezervasyon a{ display:block; background:url(../tema/onlinerezervasyon.png); width:144px; height:23px; text-align:center; padding-top:7px; color:#0066ff; text-shadow:1px 1px 2px #fff;}
+.oteldetaybaslik { font-size:16px; color:#00ccff; margin-bottom:5px; }
+.oteldetayil { font-size:14px; color:#000; margin-left:20px; margin-top:0px; }
+.oteldetayresim img{ width:350px; height:300px; border:1px solid #ccc; padding:2px; margin-right:5px; }
+.oteldetayindirim { background:url(../tema/icon_indirim.png); width:70px; height:31px; padding:29px 10px; color:#fff; font-size:16px; text-align:center; margin-right:30px; }
+.detayayrinti { margin:20px 0 0 30px; width:390px;}
+.detayayrinti .fiyat { font-size:16px; width:270px; text-align:center;  height:30px; margin-top:8px;}
+.detayayrinti .konaklama { width: 270px; color:#cc0000; font-size:16px; height:30px; }
+.tabs { padding: 0; clear: both; }
+.tabs li { display: inline; }
+.tabs li a { background: #00ccff; padding: 10px; float:left; text-decoration: none; color: #000; font-weight: bold; border:1px solid #ccc; border-bottom:0px; margin-right:2px; border-radius:5px 5px 0 0; }
+.tabs li.active a { background: #fff; border:1px solid #ccc; border-bottom:0px; }
+.content { float: left; padding: 10px; width: 770px; border:1px solid #ccc; border-radius: 0 5px 5px 5px;}
+.content .baslik { font-size:16px; color:#00ccff; }
+.content .iconlar ul { list-style-type:none; display:inline-block; list-style-position: outside; }
+.content .iconlar ul li { float:left; width:167px; background:url(../images/bullet2.png) no-repeat left 4px; padding:4px 5px 4px 20px; }
+.content .fiyatlandirma { width:750px; height:13px; padding:15px 10px; background:#21A6FF; color:#fff; font-size:14px; border-radius:5px; }
+.mavitablo { width:770px; height:13px; padding:15px 10px; background:#21A6FF; color:#fff; font-size:14px; border-radius:5px; }
+.content .odatipi { width:150px; }
+.content .konsept { width:150px; text-align:center; }
+.content .kisi { width:90px; text-align:center; margin-top:-7px; }
+.content .cocuk { width:90px; text-align:center; }
+.content .fiyat { width:750px; padding:15px 10px; font-size:12px; border-radius:5px; }
+table .stil1 { max-width:25px; min-width:20px; height:25px; background:#f5f5f5; border:1px solid #ccc; text-align:center; }
+table .stil2 { max-width:25px; min-width:20px; height:25px; background:#cc0000; border:1px solid #ccc; text-align:center; }
+table .stil5 { height:96%; height:23px; text-align:center; display:block; background:#00cc00; margin:1px;}
+#galeri .resim { padding:2px; border:1px solid #ccc; background:#f5f5f5; border-radius:5px; width:130px; height:110px; margin-right:12px; margin-left:6px; margin-bottom:15px; }
+#galeri .resim img{ width:130px; height:110px; border-radius:5px; }
+#foother {  width:998px; border:1px solid #ccc; border-bottom:1px solid #ccc; border-radius:5px 5px 0 0; height:155px; background:url(../tema/foother_bg.jpg); }
+#foother .tablo { width:967px; margin-left:15px; height:20px; margin-top:10px; padding-bottom:5px; border-bottom:1px solid #ccc; color:#666; font-size:11px; }
+#foother .tablo .link a{ display:block; color:#666; font-weight:100; margin-left:20px; }
+
+
+#rezervasyon .tablo { width:255px; height:212px; margin:0 11px 10px 0;}
+#rezervasyon .tablo .aracadi { width:250px; height:20px; padding:7px 0 0 5px; font-size:14px; background:#efefef; margin-bottom:5px;}
+#rezervasyon .tablo .resim img { width:235px; height: 140px; border:1px solid #ccc; padding:5px 10px; }
+#rezervasyon .tablo .fiyat { width:250px; background:#E7F0F0; height:20px; padding:7px 5px 0 0; border-radius:0 0 5px 5px;  border:1px solid #ccc; border-top:0px; }
+#rezervasyon .tablo .ozellikler { width:300px; height:20px; padding:7px 0 0 5px; font-size:14px; background:#efefef; margin-bottom:5px; }
+.aracbaslik { width:237px; height:13px; padding:10px 10px; background:url(../tema/rentacar_baslik.jpg); color:#fff; font-size:14px; }
+.aracuzunbaslik { width:770px; height:12px; padding:10px 10px; background:url(../tema/rentacar_bg.jpg); color:#fff; font-size:14px; }
+
+#rezervasyon .tablo2 { width:788px; min-height:175px; margin:0 0 10px 0; border:1px solid #ccc; border-radius:0 0 5px 5px; }
+#rezervasyon .tablo2 .aracadi { width:236px; height:20px; padding:7px 0 0 5px; font-size:14px; background:#efefef; margin-bottom:5px;}
+#rezervasyon .tablo2 .resim img{ border-radius:5px;width:219px; height:170px; }
+#rezervasyon .tablo2 .resim {  border-radius:5px;margin:5px 5px 5px 5px; width:219px; height:170px; border:1px solid #ddd; padding:5px 5px;}
+#rezervasyon .tablo2 .fiyat { width:237px; }
+#rezervasyon .tablo2 .ozellikler { width:260px; height:20px; padding:7px 0 0 5px; font-size:14px; margin-top:5px; margin-bottom:5px; }
+#rezervasyon .tablo2 .fiyatlandirma { width:255px; height:20px; padding:7px 0 0 5px; font-size:14px; margin-top:5px; margin-bottom:5px; }
+.tablo2 .detaylibilgi a{ display:block; color:#cc9900; background:url(../tema/detaylibilgi.png); width:107px; height:23px; margin-right:8px; text-align:center; padding-top:7px; text-shadow:1px 1px 2px #fff; }
+.tablo2 .rezervasyon a{ display:block; background:url(../tema/onlinerezervasyon.png); width:144px; height:23px; text-align:center; padding-top:7px; color:#0066ff; text-shadow:1px 1px 2px #fff;}
+#rezervasyon .tablo2 .resim2 img{ border-radius:5px; width:209px; height:160px; }
+#rezervasyon .tablo2 .resim2 {  border-radius:5px;margin:5px 5px 5px 5px; width:209px; height:160px; border:1px solid #ddd; padding:5px 5px;}
+
+
+.reztext {width:400px; resize:none; height:100px; font-family:arial; background:#fefefe; border-radius:5px; border:1px solid #ccc}
+.text { text-align:justify;}
+.text p { margin:10px 0 10px 0; }
+
+.transferalt { width:782px; min-height:200px; border:1px solid #ccc; border-radius:0 0 5px 5px; padding:10px 0 10px 6px; }
+.transferalt .alis { width:177px; padding:5px 0 5px 5px; color:#cc0000; background:#E7F0F0; margin-right:3px; border:1px solid #ccc; margin-bottom:3px; }
+.transferalt .gun { width:60px; padding:5px 0 5px 0; color:#cc0000; background:#E7F0F0; margin-right:3px; border:1px solid #ccc; text-align:center; margin-bottom:3px;}
+
+.arama { padding: 0; clear: both; margin:15px 0 5px 17px }
+.arama li { display: inline; }
+.arama li a { float:left; text-decoration: none; color: #fff; font-weight: bold; margin-right:25px; margin-bottom:10px; }
+.arama li.active a {  border-bottom:0px; }
+.aramaalani { width:250px; }

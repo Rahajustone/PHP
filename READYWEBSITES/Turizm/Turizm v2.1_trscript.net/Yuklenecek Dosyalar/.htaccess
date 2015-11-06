@@ -1,0 +1,71 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php
+
+Options +Indexes
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+RewriteRule oteller.html oteller.php?icerik_id=7 [L]
+RewriteRule erkenrezervasyonotelleri.html erkenrezervasyonotelleri.php?icerik_id=8 [L]
+RewriteRule kaplicatermalotelleri.html kaplicatermalotelleri.php?icerik_id=9 [L]
+RewriteRule firsatotelleri.html firsatotelleri.php?icerik_id=10 [L]
+RewriteRule bayramotelleri.html bayramotelleri.php?icerik_id=11 [L]
+RewriteRule hakkimizda.html hakkimizda.php [L]
+RewriteRule iletisim.html iletisim.php [L]
+RewriteRule otel-ara.html otelara.php [L]
+RewriteRule fuarlar.html fuarlar.php?icerik_id=12 [L]
+RewriteRule villalar.html villalar.php?icerik_id=13 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule villalar/(.+)/(.+)-kayitolusturuldu villadetay.php?bolge_sef=$1&villa_sef=$2&kayit=1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule villalar/(.+)/(.+) villadetay.php?bolge_sef2=$1&villa_sef=$2 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule villalar/(.+) villabolgeler.php?bolge_sef2=$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule villalar/ villalar.php?icerik_id=13 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule fuar/(.+) fuardetay.php?fuar_sef=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule rentacar/(.+).html-kayitolusturuldu rentacarrezervasyon.php?arac_sef=$1&kayit=1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule rentacar/(.+).html rentacarrezervasyon.php?arac_sef=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule rentacar/ rentacar.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.+)/(.+)-kayitolusturuldu oteldetay.php?bolge_sef=$1&otel_sef=$2&kayit=1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.+)/(.+) oteldetay.php?bolge_sef=$1&otel_sef=$2 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.+) bolgeler.php?bolge_sef=$1 [L]

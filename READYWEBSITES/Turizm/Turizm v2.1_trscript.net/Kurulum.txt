@@ -1,0 +1,92 @@
+
+
+
+*************
+***OFISIMO.COM  TURÝZM  SCRÝPT KURULUM***
+*************
+
+
+
+-- FTP --
+
+Yüklenecek Klasör Ýçerisindeki Tüm Dosyalarý FTP'nize Yükleyin.
+
+
+-- DOSYA ÝZÝNLERÝ --
+
+Ana Dizinde Bulunan; oteller,resim, slider, rent,  Klasörlerine 777 Ýznini verin.
+
+
+--DATABASE KURULUMU--
+
+Sitenizin kontrol panelinden (cpanel,directadmin,plesk)  veritabanýnýzý oluþturup, SQL Klasörünün içinde bulunan turizm.sql i phpmyadmin'e yükleyin.
+
+--- Ana dizinde bulunan  inc Klasöründeki database.php Dosyasýna veri tabaný bilgilerinizi giriniz.
+
+<?
+$db = mysql_connect("localhost","demo_turizm","654123");  // VERÝTABANI KULLANICI ADI ve ÞÝFRESÝ
+
+mysql_select_db("demo_turizm", $db) or die ("baglanamadi"); // VERÝTABANI ADI
+
+mysql_query("set names latin5"); 
+?>
+
+----------- SÝTE URL AYARI--------------------
+Ana dizinde bulunan  inc Klasöründeki ayar.php Dosyasýnda Aþaðýdaki Kod Alanýný Bulun 
+http://demoincele.com Site Adresini silin. Kendi site adresinizi yazýnýz.
+
+$site2url=$_SERVER['HTTP_HOST'];
+$siteurl="http://demoincele.com";
+$siteayarlar=mysql_query("select * from siteayarlari WHERE site_id='1'");
+$siteayarlarveri = mysql_fetch_array($siteayarlar);
+
+
+----------- ADMÝN PANEL KLASÖRÜ AYARLARI --------------------
+
+admin klasörü içerinde bulunan inc klasörü içerisinde ayar.php dosyasýnda aþaðýdaki kod alanýný bulun kendi veritabaný bilgilerinizi giriniz.
+
+define('DB_HOST', 'localhost');
+define('DB_USER', 'demo_turizm');
+define('DB_PASSWORD', '654123');
+define('DB_DATABASE', 'demo_turizm');
+--------------------------------------------------------------------------------------------------------------------------
+admin klasörü içerinde bulunan giriskontrol.php dosyasýnda aþaðýdaki kod alanýný bulun kendi veritabaný bilgilerinizi giriniz.
+
+define('DB_HOST', 'localhost');
+define('DB_USER', 'demo_turizm');
+define('DB_PASSWORD', '654123');
+define('DB_DATABASE', 'demo_turizm');
+
+--------------------------------------------------------------------------------------------------------------------------
+
+-- KURULUM TAMAMLANMIÞTIR.--
+
+--------------------------------------------------------------------------------------------------------------------------
+-- ADMÝN PANEL GÝRÝÞ --
+
+http://www.siteadresi.com/admin
+Kullanýcý Adý: admin
+Þifre: 123456
+
+Admin Paneline Giriþ Yaptýktan Sonra Yönetici Ayarlarý Kýsmýndan Kullanýcý Adý ve  Þifrenizi lütfen deðiþtiriniz.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+-- SÝTE AYARLARI  --
+
+Admin Panelinizden Genel Ayarlar - Ýletiþim Ayarlarý - Mail Ayarlarý Bölümlerinde Sitenizle Ýlgili Tüm Ayarlarý Yapýnýz.
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+*************
+***GÜLE GÜLE KULLANIN - ÝYÝ GÜNLER ***
+*************
+
+
+
+www.ofisimo.com
+
+Msn: bilgi@ofisimo.com

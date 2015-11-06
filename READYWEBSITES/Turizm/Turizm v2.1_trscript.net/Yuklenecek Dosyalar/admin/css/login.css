@@ -1,0 +1,74 @@
+* {margin:0; padding:0;}
+
+body {
+ background:url('../../assets/bg.png') #b02b2c 50% 0 no-repeat;
+ width:100%;
+ height:100%;
+ font-family:Tahoma, Verdana, Arial, sans-serif;
+}
+
+#login {
+ clear:both;
+ float:none;
+ margin:0 auto;
+ margin-top:200px;
+ width:444px;
+ height:171px;
+ background:url('../assets/login.png');
+}
+
+#login #left {
+ clear:both;
+ float:left;
+ width:246px;
+ height:171px;
+}
+
+#login #right {
+ float:left;
+ width:169px;
+ padding-left:10px;
+ padding-right:10px;
+ height:171px;
+ background:url('../assets/spacer.png') 0 20px no-repeat;
+}
+
+#right .title {
+ margin-top:30px;
+ margin-bottom:16px;
+ color:#aeaeae;
+ font-size:20px;
+}
+
+.title span {
+ color:#fff;
+}
+
+#right input.input {
+ border:0;
+ margin:0;
+ padding:0;
+ padding-left:5px;
+ padding-top:2px;
+ background:url('../assets/input.png');
+ width:164px;
+ height:19px;
+ color:#555;
+ margin-bottom:5px;
+}
+
+#right input.button {
+ width:95px;
+ height:23px;
+ padding:0;
+ margin:0;
+ border:0;
+ float:right;
+ color:#fff;
+ background:url('../assets/button.png');
+ margin-top:8px;
+}
+
+input.button:hover {
+ color:#ccc!important;
+}

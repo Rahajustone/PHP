@@ -1,0 +1,38 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^anasayfa$ index.php [L,NC]
+RewriteRule ^webtasarim$ sayfa.php?ym=kurumsal [L,NC]
+RewriteRule ^webtasarim/(.*)/(.*)$ sayfa.php?ym=kurumsal&id=$1 [L,NC]
+RewriteRule ^hizmet$ sayfa.php?ym=hizmet [L,NC]
+RewriteRule ^hizmet/(.*)/(.*)$ sayfa.php?ym=hizmet&id=$1 [L,NC]
+RewriteRule ^haber$ sayfa.php?ym=haber [L,NC]
+RewriteRule ^haber/(.*)/(.*)$ sayfa.php?ym=haber&id=$1 [L,NC]
+RewriteRule ^teknik$ sayfa.php?ym=teknik [L,NC]
+RewriteRule ^teknik/(.*)/(.*)$ sayfa.php?ym=teknik&id=$1 [L,NC]
+RewriteRule ^kariyer$ sayfa.php?ym=kariyer [L,NC]
+RewriteRule ^kariyer/(.*)/(.*)$ sayfa.php?ym=kariyer&id=$1 [L,NC]
+RewriteRule ^hizmet-alanlari$ sayfa.php?ym=hizmet_alan [L,NC]
+RewriteRule ^hizmet-alanlari/(.*)$ sayfa.php?ym=hizmet_alan&sayfa=$1 [L,NC]
+RewriteRule ^hizmetler/(.*)/(.*)$ sayfa.php?ym=hizmetler&id=$1 [L,NC]
+RewriteRule ^iletisim$ sayfa.php?ym=iletisim [L,NC]
+RewriteRule ^iletisim/(.*)/(.*)$ sayfa.php?ym=iletisim&id=$1 [L,NC]
+RewriteRule ^iletisim-formu$ sayfa.php?ym=iform [L,NC]
+RewriteRule ^basvuru-formu$ sayfa.php?ym=bform [L,NC]
+RewriteRule ^distributor/(.*)/(.*)$ sayfa.php?ym=distributor&id=$1 [L,NC]
+RewriteRule ^urunler/(.*)$ sayfa.php?ym=urunler&sayfa=$1 [L,NC]
+RewriteRule ^urun/(.*)/(.*)$ sayfa.php?ym=urun&id=$1 [L,NC]
+RewriteRule ^kategori/(.*)/(.*)/(.*)$ sayfa.php?ym=kategori&id=$1&baslik=$2&sayfa=$3 [L,NC]
+RewriteRule ^akategori/(.*)/(.*)/(.*)$ sayfa.php?ym=akategori&id=$1&baslik=$2&sayfa=$3 [L,NC]
+RewriteRule ^components/(.*)$ sayfa.php?ym=komponent&sayfa=$1 [L,NC]
+RewriteRule ^component/(.*)/(.*)$ sayfa.php?ym=component&id=$1 [L,NC]
+RewriteRule ^sepet$ sayfa.php?ym=sepet [L,NC]
+RewriteRule ^sepet/(.*)$ sayfa.php?ym=sepet&sil=$1 [L,NC]
+
+#RewriteCond %{HTTP_HOST} !^www\.eyapim\.com\webtasarimci
+#RewriteRule ^(.*)$ http://www.eyapim.com/webtasarimci/$1 [R=permanent,L]
+
+#php_value upload_max_filesize 100M
+#php_value max_execution_time 800
+#php_value post_max_size 100M
+#php_value max_input_time 100
+#php_value memory_limit 120M

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body onload="function">
+    <input type="button" id="addMarker" value="Marker Ekle" />
+
+    <div id="mapCanvas" style="width:640px; height:480px; position:relative;"></div>
+
+    <script type="text/javascript">
+      //haritamizin baslangicda konumlanacagi noktayi tanimliyoruz
+      var startPoint = new google.maps.LatLng(36.87670267733188, 30.70801019668579);
+
+      //harita seceneklerimizi tanimliyoruz.
+      var mapOptions = {
+        zoom      : 7,
+        center    : startPoint,
+        mapTypeId : google.maps.MapTypeId.ROADMAP
+      }
+
+      //haritamizi yukleyip ekranda goruntuluyoruz.
+      var mapCanvas = document.getElementById('mapCanvas');
+      var map = new google.maps.Map( mapCanvas, mapOptions );
+
+      //marker ekle butonun olayini tanimliyoruz.
+      document.getElementById('addMarker').onclick = function()
+      {
+        var markerPoint = new google.maps.LatLng(36.87670267733188, 30.70801019668579);
+
+        var marker = new google.maps.Marker({
+          title : 'Yeni marker',
+          position : markerPoint,
+          map : map
+        })
+      }
+
+
+
+    </script>
+
+  </body>
+</html>

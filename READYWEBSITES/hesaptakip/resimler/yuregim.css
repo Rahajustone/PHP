@@ -1,0 +1,65 @@
+body {background:#C2F3FF;margin:0px;padding:0px;font:12px Arial;}
+#kaplama {width:800px;margin:10px auto;}
+a.beyaz {text-decoration:none;color:#fff;font:bold 12px Tahoma;}
+a.beyaz:hover {text-decoration:underline;color:#fff;font:bold 12px Tahoma;}
+a.mavi {text-decoration:none;color:#0588BA;font:bold 11px Arial;}
+a.mavi:hover {text-decoration:underline;color:#0588BA;font:bold 11px Arial;}
+a.kalin {text-decoration:none;color:#666;font:bold 12px Arial;}
+a.kalin:hover {text-decoration:underline;color:#000;font:bold 12px Arial;}
+.icerik {width:778px;float:left;background:#fff;border:1px solid #ccc;padding:10px;}
+.sol {width:120px;float:left;margin-right:10px;}
+.sag {width:648px;float:left;}
+.baslik1 {width:112px;height:16px;float:left;padding:4px;background:#333;color:#fff;font:bold 12px Tahoma;}
+.baslik2 {width:640px;height:16px;float:left;padding:4px;background:#333;color:#fff;font:bold 12px Tahoma;}
+.ekle {width:56px;float:right;background:url(ekle.png) no-repeat;padding:0px 0px 0px 24px;}
+.yazi {float:left;margin:10px 0px 10px 0px;}
+ul.menuler {list-style-type:none;margin:0px;padding:0px;}
+ul.menuler li {display:block;}
+ul.menuler li.alacaklar {display:block;padding:0px 0px 3px 24px;background:url(alacaklar.png) no-repeat;margin-bottom:10px;}
+ul.menuler li.borclar {display:block;padding:0px 0px 3px 24px;background:url(borclar.png) no-repeat;margin-bottom:10px;}
+ul.menuler li.notlar {display:block;padding:0px 0px 2px 24px;background:url(notlar.png) no-repeat;margin-bottom:10px;}
+ul.menuler li.backlink {display:block;padding:0px 0px 2px 24px;background:url(backlink.png) no-repeat;margin-bottom:10px;}
+ul.menuler li.arsiv {display:block;padding:0px 0px 2px 24px;background:url(arsiv.png) no-repeat;margin-bottom:10px;}
+ul.menuler li.cikis {display:block;padding:0px 0px 3px 24px;background:url(cikis.png) no-repeat;}
+ul.menuler li a {text-decoration:none;color:#666;font:bold 12px Tahoma;}
+ul.menuler li a:hover {text-decoration:underline;color:#333;font:bold 12px Tahoma;}
+.satir {width:648px;height:110px;float:left;margin-bottom:20px;cursor:pointer;}
+.satir:hover {width:648px;height:110px;float:left;margin-bottom:20px;background:url(arka-kutu.jpg) bottom repeat-x;}
+.satir3 {width:648px;height:50px;float:left;margin-bottom:20px;cursor:pointer;}
+.satir3:hover {width:648px;height:50px;float:left;margin-bottom:20px;background:url(arka-kutu2.jpg) bottom repeat-x;}
+.satir2 {width:648px;height:20px;float:left;margin-bottom:10px;}
+.kisi {width:190px;float:left;background:url(kisi.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.site {width:190px;float:left;background:url(site.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.email {width:190px;float:left;background:url(email.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.yapilan {width:190px;float:left;background:url(yapilan.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.tarih {width:190px;float:left;background:url(tarih.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.nottarihi {width:490px;float:left;background:url(tarih.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.not {width:600px;height:50px;float:left;background:url(notyazisi.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.telefon {width:190px;float:left;background:url(telefon.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.alinan {width:190px;float:left;background:url(alinan.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.kalan {width:190px;float:left;background:url(kalan.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.borcu {width:190px;float:left;background:url(fiyat.png) no-repeat;padding:0px 0px 3px 26px;margin-bottom:10px;}
+.islemler {width:638px;height:17px;float:left;margin-bottom:10px;padding:4px;text-align:right;background:#F4F4F4;border:1px solid #E0E0E0;}
+.aylar {width:638px;height:17px;float:left;margin-bottom:10px;padding:4px;background:#F4F4F4;border:1px solid #E0E0E0;}
+.uyari {width:390px;float:left;text-align:left;padding:2px 0px 0px 5px;}
+.sec {width:240px;float:right;}
+ul.islem {list-style-type:none;padding:0px;margin:0px;}
+ul.islem li {display:inline;padding:0px 5px 0px 5px;}
+.toplam {width:600px;float:right;text-align:right;margin:0px 0px 0px 0px;}
+input.inputlar {width:145px;height:18px;border:0px;background:none;float:left;margin-bottom:13px;font:12px Tahoma;color:#666;}
+input.inputlar2 {width:165px;height:18px;border:1px solid #ccc;background:none;float:left;}
+textarea.notcuk {width:210px;height:100px;border:1px solid #ccc;float:left;margin-bottom:10px;}
+input.girisyap {width:50px;height:24px;float:right;}
+.giris {width:145px;height:90px;margin:0px;background:url(arka-giris.jpg) no-repeat;padding:60px 10px 10px 35px;}
+.girisalani {width:145px;height:90px;margin:180px auto;padding:0px;}
+.girisuyari {width:125px;height:20px;margin:0px 0px 5px 0px;font:12px Tahoma;color:red;background:url(cikis.png) no-repeat;padding-left:20px;}
+.yazi2 {width:140px;float:left;padding:3px 0px 0px 0px;font:bold 12px Tahoma;margin:0px 10px 0px 10px;}
+.inputalani {width:200px;float:left;padding-left:10px;margin:0px 10px 0px 10px;}
+input.gonder {width:110px;height:22px;border:1px solid #ccc;background:#F0F0F0;cursor:pointer;text-align:center;}
+input.gonder:hover {width:110px;height:22px;border:1px solid #ccc;background:#E5E5E5;}
+.hata {width:620px;height:18px;float:left;padding:3px 0px 0px 26px;color:red;margin:10px 0px 10px 0px;background:#FCDCDD url(sil.png) 4px 2px no-repeat;border:1px solid red;}
+.tamam {width:620px;height:18px;float:left;padding:3px 0px 0px 26px;color:#009900;margin:10px 0px 10px 0px;background:#E8FFC6 url(tamam.png) 4px 2px no-repeat;border:1px solid #009900;}
+.ay {width:140px;float:left;}
+.aysonu {width:470px;float:left;}
+.aysil {width:16px;float:right;}
+.yapan {width:800px;float:left;margin:20px 0px 0px 0px;color:#06A0DB;font:11px Arial;}
